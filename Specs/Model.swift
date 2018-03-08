@@ -28,7 +28,7 @@ class User {
     func getUserID(user:User) -> Int {
         return user.userID
     }
-    func serUsdrID(user:User, id:Int) {
+    func setUsdrID(user:User, id:Int) {
         user.userID = id
     }
     
@@ -42,7 +42,7 @@ class User {
     func getUserPassword(user:User) -> String {
         return user.password
     }
-    func serUserPassword(user:User, pass:String) {
+    func setUserPassword(user:User, pass:String) {
         user.password = pass
     }
     
