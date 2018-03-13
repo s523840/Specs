@@ -102,9 +102,18 @@ class User {
 
 
 
+struct Movie {
+    var movieID:Int
+    var movieTitle:String
+    var movieDirector:String
+    var movieGenre:String
+    var releaseDate:String
+    var starringActors:[String]
+    var movieDescription:String
+    var starRating:Int
+}
 
-
-
+/*
 class Movie {
     var movieID:Int
     var movieTitle:String
@@ -193,12 +202,22 @@ class Movie {
     }
     
 }
+*/
 
 
 
+struct TVShow {
+    var showID:Int
+    var showTitle:String
+    var showDirector:String
+    var showGenre:String
+    var releaseDate:String
+    var starringActors:[String]
+    var showDescription:String
+    var starRating:Int
+}
 
-
-
+/*
 class TVShow {
     var showID:Int
     var showTitle:String
@@ -298,5 +317,6 @@ class TVShow {
     func setRating(show:TVShow, rating:Int) {
         show.starRating = rating
     }
-    
+ 
 }
+*/
