@@ -12,6 +12,12 @@
 		6C8086BC206C4998002E0125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8086B8206C4998002E0125 /* Main.storyboard */; };
 		6C8086BD206C4998002E0125 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8086B9206C4998002E0125 /* SecondViewController.swift */; };
 		6C8086BE206C4998002E0125 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8086BA206C4998002E0125 /* FirstViewController.swift */; };
+		6C8086C1206C4A57002E0125 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8086BF206C4A57002E0125 /* Bolts.framework */; };
+		6C8086C2206C4A57002E0125 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8086C0206C4A57002E0125 /* Parse.framework */; };
+		6C8086C5206C4A86002E0125 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8086C4206C4A86002E0125 /* libstdc++.6.tbd */; };
+		6C8086C7206C4A8F002E0125 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8086C6206C4A8F002E0125 /* libsqlite3.tbd */; };
+		6C8086C9206C4A98002E0125 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8086C8206C4A98002E0125 /* SystemConfiguration.framework */; };
+		6C8086CB206C4A9E002E0125 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8086CA206C4A9E002E0125 /* AudioToolbox.framework */; };
 		C47EF3262034E19C00B17B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47EF3252034E19C00B17B34 /* Assets.xcassets */; };
 		C47EF3292034E19C00B17B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47EF3272034E19C00B17B34 /* LaunchScreen.storyboard */; };
 		C47EF3342034E19D00B17B34 /* SpecsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47EF3332034E19D00B17B34 /* SpecsTests.swift */; };
@@ -41,6 +47,12 @@
 		6C8086B8206C4998002E0125 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6C8086B9206C4998002E0125 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		6C8086BA206C4998002E0125 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		6C8086BF206C4A57002E0125 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		6C8086C0206C4A57002E0125 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		6C8086C4206C4A86002E0125 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		6C8086C6206C4A8F002E0125 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		6C8086C8206C4A98002E0125 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6C8086CA206C4A9E002E0125 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C47EF31B2034E19C00B17B34 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47EF3252034E19C00B17B34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C47EF3282034E19C00B17B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +70,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8086CB206C4A9E002E0125 /* AudioToolbox.framework in Frameworks */,
+				6C8086C9206C4A98002E0125 /* SystemConfiguration.framework in Frameworks */,
+				6C8086C7206C4A8F002E0125 /* libsqlite3.tbd in Frameworks */,
+				6C8086C5206C4A86002E0125 /* libstdc++.6.tbd in Frameworks */,
+				6C8086C2206C4A57002E0125 /* Parse.framework in Frameworks */,
+				6C8086C1206C4A57002E0125 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C8086C3206C4A85002E0125 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C8086CA206C4A9E002E0125 /* AudioToolbox.framework */,
+				6C8086C8206C4A98002E0125 /* SystemConfiguration.framework */,
+				6C8086C6206C4A8F002E0125 /* libsqlite3.tbd */,
+				6C8086C4206C4A86002E0125 /* libstdc++.6.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C47EF3122034E19C00B17B34 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +114,7 @@
 				C47EF3322034E19D00B17B34 /* SpecsTests */,
 				C47EF33D2034E19D00B17B34 /* SpecsUITests */,
 				C47EF31C2034E19C00B17B34 /* Products */,
+				6C8086C3206C4A85002E0125 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +131,16 @@
 		C47EF31D2034E19C00B17B34 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				6C8086B8206C4998002E0125 /* Main.storyboard */,
+				C47EF3272034E19C00B17B34 /* LaunchScreen.storyboard */,
 				C47EF3252034E19C00B17B34 /* Assets.xcassets */,
+				C47EF32A2034E19C00B17B34 /* Info.plist */,
 				6C8086B7206C4997002E0125 /* AppDelegate.swift */,
 				6C8086BA206C4998002E0125 /* FirstViewController.swift */,
-				6C8086B8206C4998002E0125 /* Main.storyboard */,
 				6C8086B9206C4998002E0125 /* SecondViewController.swift */,
-				C47EF3272034E19C00B17B34 /* LaunchScreen.storyboard */,
-				C47EF32A2034E19C00B17B34 /* Info.plist */,
 				3F13CA72204B585300A70DE8 /* Model.swift */,
+				6C8086BF206C4A57002E0125 /* Bolts.framework */,
+				6C8086C0206C4A57002E0125 /* Parse.framework */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -427,6 +459,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Specs",
+				);
 				INFOPLIST_FILE = Specs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NWMSU.Specs;
@@ -441,6 +477,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Specs",
+				);
 				INFOPLIST_FILE = Specs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NWMSU.Specs;
