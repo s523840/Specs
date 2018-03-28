@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Specs
+//  Specs2.0
 //
-//  Created by Reuscher,Elicia R on 2/14/18.
-//  Copyright © 2018 Reuscher,Elicia R. All rights reserved.
+//  Created by Becthold,Robert A on 3/28/18.
+//  Copyright © 2018 Becthold,Robert A. All rights reserved.
 //
 
 import UIKit
@@ -12,19 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    //Movie Instances
-    //Will consider using an array and functions to make the instances "cleaner" looking
-    //Maybe change genre from type String to an array of String
-    let movieInstance1 = Movie(movieID: 1, movieTitle: "Atomic Blonde", movieDirector: "David Leitch", movieGenre: "Action, Mystery, Thriler", releaseDate: "28 July 2017", starringActors: ["Charlize Theron", "James McAvoy", "John Goodman"], movieDescription: "An undercover MI6 agent is sent to Berlin during the Cold War to investigate the murder of a fellow agent and recover a missing list of double agents.", starRating: 7)
-    
-    let movieInstance2 = Movie(movieID: 2, movieTitle: "Jeepers Creepers", movieDirector: "Victor Salva", movieGenre: "Horror, Mystery", releaseDate: "31 August 2001", starringActors: ["Gina Philips", "Justin Long", "Jonathan Breck"], movieDescription: "A brother and sister driving home through isolated countryside for spring break encounter a flesh-eating creature which is in the midst of its ritualistic eating spree.", starRating: 6)
 
-    let movieInstance3 = Movie(movieID: 3, movieTitle: "Toy Story", movieDirector: "John Lasseter", movieGenre: "Animation, Adventure, Comedy", releaseDate: "22 November 1995", starringActors: ["Tom Hanks", "Time Allen", "Don Rickles"], movieDescription: "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.", starRating: 8)
-    
-    let movieInstance4 = Movie(movieID: 4, movieTitle: "Titanic", movieDirector: "James Cameron", movieGenre: "Drama, Romance", releaseDate: "19 December 1997", starringActors: ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"], movieDescription: "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.", starRating: 8)
-    
-    let movieInstance5 = Movie(movieID: 5, movieTitle: "Black Panther", movieDirector: "Ryan Coogler", movieGenre: "Action, Adventure, Sci-Fi", releaseDate: "16 February 2018", starringActors: ["Chadwick Boseman", "Michael B. Jordan", "Lupita Nyong'o"], movieDescription: "T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider who was a childhood victim of T'Challa's father's mistake.", starRating: 8)
-    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
