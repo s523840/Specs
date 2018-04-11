@@ -35,10 +35,12 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func addStreaming(_ sender: Any) {
+        //Hardcoding
         //Button that will add users streaming sites
     }
     
     @IBAction func addTVandMovies(_ sender: Any) {
+        //This should show a list of movies where the user can select from
         //        let movie = Movie()
         //        movie.title = "Airplane"
         //        movie.year = 1978
@@ -56,6 +58,7 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func mood(_ sender: Any) {
+        //List of 
         //Will add mood from user and use this information for other data
     }
     
