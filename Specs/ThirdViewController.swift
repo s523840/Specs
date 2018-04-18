@@ -33,14 +33,29 @@ class ThirdViewController: UIViewController {
     
     @IBAction func suggestion(_ sender: Any) {
         //Will take users mood and suggest a movie and/or tv show
+        //**How to pull from mood chosen by user and apply it here?**
+        let suggestion = PFObject()
+        if mood == "Happy"{
+            suggestion = "Life Is Beautiful"
+        }
+        else if mood == "Angry"{
+            suggestion = "Fight Club"
+        }
+        else{
+            suggestion = "The Civil War"
+        }
     }
     
     @IBAction func friendsViewing(_ sender: Any) {
         //Will show what friends of user are watching
+        //**How to pull from friends created in FirstViewController and apply it here??**
+        
     }
     
     @IBAction func popular(_ sender: Any) {
         //Will show what's popular
+        let popular = PFObject(className: "Popular")
+        popular["popular"] = ["Breaking Bad", "Game of Thrones", "Planet Earth"]
     }
     
     //Miscellaneous stuff we will probably need...

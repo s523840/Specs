@@ -32,11 +32,30 @@ class FirstViewController: UIViewController {
     
     @IBAction func basicInformation(_ sender: Any) {
         //Button that will store information about user
-    }
+        //**Should this be a fetch?**
+        let user = PFObject(className: "User")//pulling from model
+        user["userName"] = "Bob"
+        user["showFavorites"] = ["Fargo","Firefly","The Twilight Zone","Sherlock","Life"]//Using back4app
+        user["movieFavorites"] = ["Forest Gump","Fight Club","Pulp Fiction","inception","The Dark Knight"]//using back4app
+        user["friends"] = ["Karen", "Stephen", "Jill"]
+        
+        
+      
+        //Throwing an error
+       /* user.saveInBackground(block: { (success, error) - > Void in
+            if success{
+                self.displayOKAlert(title: "Success!", message: "User information saved.")
+            } else{
+                print(error)
+            }
+        })
+    */}
     
     @IBAction func addStreaming(_ sender: Any) {
         //Hardcoding
         //Button that will add users streaming sites
+        let streaming = PFObject(className: "Streaming")
+        streaming["streamingSites"] = ["Amazon","Hulu","Netflix"] //**Can we continue using the model or do we need to add a cocoa touch class for users, streaming, etc.??**
     }
     
     @IBAction func addTVandMovies(_ sender: Any) {
@@ -55,11 +74,14 @@ class FirstViewController: UIViewController {
         //        })
         
         //This button will store movies and tv shows entered in by user
+        //**We hardcoded movies and tv shows in parse, how to access them here?? Fetch??**
     }
     
     @IBAction func mood(_ sender: Any) {
         //List of 
         //Will add mood from user and use this information for other data
+        let mood = PFObject(className: "Mood") //**Do we need PFObject for every button?**
+        mood["mood"] = ["Happy","Sad","Angry"]
     }
     
     //Miscellaneous stuff we will probably need but commenting out

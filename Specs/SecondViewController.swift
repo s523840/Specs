@@ -32,18 +32,27 @@ class SecondViewController: UIViewController {
     
     @IBAction func favorites(_ sender: Any) {
         //Will add favorites of user
+        let favorites = PFObject(className: "Favorites")
+        favorites["favorites"] = ["Fargo","Firefly","Forest Gump","Fight Club"] //Mix of tv and movie favorites
+        
     }
     
     @IBAction func currentlyWatching(_ sender: Any) {
         //Will show what user is currently watching
+        let currentlyWatching = PFObject(className: "Watching")
+        currentlyWatching["watching"] = "Goodfellas"
     }
     
     @IBAction func moviesWatched(_ sender: Any) {
         //Will show what movies user has been watching
+        let moviesWatched = PFObject(className: "MoviesWatched")
+        moviesWatched["moviesWatched"] = ["One Flew Over the Cuckoo's Nest", "The Matrix", "City of God"]
     }
     
     @IBAction func tvShowsWatched(_ sender: Any) {
         //Will show what tv shows user has been watching
+        let tvWatched = PFObject(className: "TvWatched")
+        tvWatched ["TvWatched"] = ["The Sopranos", "Rick and Morty", "The Wire", "Game of Thrones"]
     }
     
     //Miscellaneous stuff we will probably need...
