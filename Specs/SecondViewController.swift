@@ -43,7 +43,7 @@ class SecondViewController: UIViewController {
         currentlyWatching["watching"] = "Goodfellas"
     }
     
-    /*@IBAction func moviesWatched(_ sender: Any) {
+    @IBAction func moviesWatched(_ sender: Any) {
         //Will show what movies user has been watching
         let query = PFQuery(className:"Movies")
         query.getObjectInBackgroundWithId( "JjxA5bleJC"){
@@ -57,16 +57,16 @@ class SecondViewController: UIViewController {
             }
         
     
-*/
-        }       /* let moviesWatched = PFObject(className: "MoviesWatched")
+
+        }        let moviesWatched = PFObject(className: "MoviesWatched")
         moviesWatched["moviesWatched"] = ["One Flew Over the Cuckoo's Nest", "The Matrix", "City of God"]*/
     
     
-   /* @IBAction func tvShowsWatched(_ sender: Any) {
+    @IBAction func tvShowsWatched(_ sender: Any) {
         //Will show what tv shows user has been watching
         let tvWatched = PFObject(className: "TvWatched")
         tvWatched ["TvWatched"] = ["The Sopranos", "Rick and Morty", "The Wire", "Game of Thrones"]
-    }*/
+    }
     
     //Miscellaneous stuff we will probably need...
     /*var movies:[Movie] = []

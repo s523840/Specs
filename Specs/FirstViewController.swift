@@ -14,6 +14,20 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //Save an object with some properties
+        let user = PFObject(className: "User")
+        user["firstname"] = "John"
+        user["lastname"] = "Smith"
+        
+        user.saveInBackground { (successful, error) in
+            if successful{
+                //The save worked
+            }
+            else{
+                //It failed to save
+            }
+        }
     }
     
     func displayOKAlert(title: String, message: String) {
@@ -30,11 +44,19 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var user:[User] = [];
     @IBAction func basicInformation(sender: AnyObject) {
         //Button that will store information about user
         //**Should this be a fetch?**
         let query = PFQuery(className: "User")
+        query.getObjectInBackground(withId: "pBQp8gDyyh") { (object, error) -> Void in
+            if object != nil && error == nil{
+                print(object as Any)
+            }
+            else{
+                print(error as Any)
+            }
+        }
+        query.whereKey("username", contains: "Movie Watcher 123")
         query.findObjectsInBackground{
             (objects: [PFObject]?, error: Error?) -> Void in
             if error == nil {
@@ -55,16 +77,16 @@ class FirstViewController: UIViewController {
 
         
         
-        /*let user = PFObject(className: "User")//pulling from model
+        let user = PFObject(className: "User")//pulling from model
         user["userName"] = "Bob"
         user["showFavorites"] = ["Fargo","Firefly","The Twilight Zone","Sherlock","Life"]//Using back4app
         user["movieFavorites"] = ["Forest Gump","Fight Club","Pulp Fiction","inception","The Dark Knight"]//using back4app
         user["friends"] = ["Karen", "Stephen", "Jill"]
-        */
+
         
       
         //Throwing an error
-       /* user.saveInBackground(block: { (success, error) - > Void in
+       user.saveInBackground(block: { (success, error) - > Void in
             if success{
                 self.displayOKAlert(title: "Success!", message: "User information saved.")
             } else{
