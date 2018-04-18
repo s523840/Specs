@@ -30,15 +30,37 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func basicInformation(_ sender: Any) {
+    var user:[User] = [];
+    @IBAction func basicInformation(sender: AnyObject) {
         //Button that will store information about user
         //**Should this be a fetch?**
-        let user = PFObject(className: "User")//pulling from model
+        let query = PFQuery(className: "User")
+        query.findObjectsInBackground{
+            (objects: [PFObject]?, error: Error?) -> Void in
+            if error == nil {
+                self.displayOKAlert(title: "Success!",
+                                    message:"Retrieved \(objects!.count) objects.")
+                self.user = objects as! [User]
+                
+                // Do something with the found objects
+                // Like display them in a table view.
+            } else {
+                // Log details of the failure
+                self.displayOKAlert(title: "Oops", message: "\(error!)")
+            }
+            
+        }
+    }
+}
+
+        
+        
+        /*let user = PFObject(className: "User")//pulling from model
         user["userName"] = "Bob"
         user["showFavorites"] = ["Fargo","Firefly","The Twilight Zone","Sherlock","Life"]//Using back4app
         user["movieFavorites"] = ["Forest Gump","Fight Club","Pulp Fiction","inception","The Dark Knight"]//using back4app
         user["friends"] = ["Karen", "Stephen", "Jill"]
-        
+        */
         
       
         //Throwing an error
@@ -49,7 +71,7 @@ class FirstViewController: UIViewController {
                 print(error)
             }
         })
-    */}
+    }
     
     @IBAction func addStreaming(_ sender: Any) {
         //Hardcoding
@@ -190,10 +212,10 @@ class FirstViewController: UIViewController {
      
      }
      
-     */
+ 
     
     
 
 
 }
-
+ */*/*/*/*/

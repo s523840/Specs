@@ -35,7 +35,7 @@ class ThirdViewController: UIViewController {
         //Will take users mood and suggest a movie and/or tv show
         //**How to pull from mood chosen by user and apply it here?**
         let suggestion = PFObject()
-        if mood == "Happy"{
+       /* if mood == "Happy"{
             suggestion = "Life Is Beautiful"
         }
         else if mood == "Angry"{
@@ -43,7 +43,7 @@ class ThirdViewController: UIViewController {
         }
         else{
             suggestion = "The Civil War"
-        }
+        }*/
     }
     
     @IBAction func friendsViewing(_ sender: Any) {
