@@ -46,19 +46,21 @@ class SecondViewController: UIViewController {
     @IBAction func moviesWatched(_ sender: Any) {
         //Will show what movies user has been watching
         let query = PFQuery(className:"Movies")
-        query.getObjectInBackgroundWithId( "JjxA5bleJC"){
-            (Title: PFObject?, error: NSError?)-> Void in
+        query.getObjectInBackground( withId: "r6grCFQLra"){
+            (Title: PFObject?, error: Error?)-> Void in
             if error == nil && Title != nil {
+                print("worked")
                 print(Title)
             }
             else{
+                print("oops")
                 print(error)
             }
             }
         
     
 
-        }        let moviesWatched = PFObject(className: "MoviesWatched")
+        }      /*  let moviesWatched = PFObject(className: "MoviesWatched")
         moviesWatched["moviesWatched"] = ["One Flew Over the Cuckoo's Nest", "The Matrix", "City of God"]*/
     
     
@@ -175,6 +177,6 @@ class SecondViewController: UIViewController {
      
      */
 
-
+}
 
 

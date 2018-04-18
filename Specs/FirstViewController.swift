@@ -62,7 +62,7 @@ class FirstViewController: UIViewController {
             if error == nil {
                 self.displayOKAlert(title: "Success!",
                                     message:"Retrieved \(objects!.count) objects.")
-                self.user = objects as! [User]
+                //self.user = objects as! [User]
                 
                 // Do something with the found objects
                 // Like display them in a table view.
@@ -77,7 +77,7 @@ class FirstViewController: UIViewController {
 
         
         
-        let user = PFObject(className: "User")//pulling from model
+       /* let user = PFObject(className: "User")//pulling from model
         user["userName"] = "Bob"
         user["showFavorites"] = ["Fargo","Firefly","The Twilight Zone","Sherlock","Life"]//Using back4app
         user["movieFavorites"] = ["Forest Gump","Fight Club","Pulp Fiction","inception","The Dark Knight"]//using back4app
