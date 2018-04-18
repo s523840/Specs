@@ -23,6 +23,9 @@
 		C47EF3292034E19C00B17B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47EF3272034E19C00B17B34 /* LaunchScreen.storyboard */; };
 		C47EF3342034E19D00B17B34 /* SpecsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47EF3332034E19D00B17B34 /* SpecsTests.swift */; };
 		C47EF33F2034E19D00B17B34 /* SpecsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47EF33E2034E19D00B17B34 /* SpecsUITests.swift */; };
+		C4A1618E2087DE9800DB0615 /* sitesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A1618D2087DE9800DB0615 /* sitesTableViewController.swift */; };
+		C4A161902087EB5100DB0615 /* MoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A1618F2087EB5100DB0615 /* MoodTableViewController.swift */; };
+		C4A16192208802A900DB0615 /* TVShowTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A16191208802A900DB0615 /* TVShowTableViewController.swift */; };
 		C4F70A342072EEFE00235262 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F70A332072EEFE00235262 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,10 @@
 		C47EF33A2034E19D00B17B34 /* SpecsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpecsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47EF33E2034E19D00B17B34 /* SpecsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecsUITests.swift; sourceTree = "<group>"; };
 		C47EF3402034E19D00B17B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A161892087DE4A00DB0615 /* Specs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Bridging-Header.h"; sourceTree = "<group>"; };
+		C4A1618D2087DE9800DB0615 /* sitesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sitesTableViewController.swift; sourceTree = "<group>"; };
+		C4A1618F2087EB5100DB0615 /* MoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTableViewController.swift; sourceTree = "<group>"; };
+		C4A16191208802A900DB0615 /* TVShowTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowTableViewController.swift; sourceTree = "<group>"; };
 		C4F70A332072EEFE00235262 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +126,7 @@
 				C47EF33D2034E19D00B17B34 /* SpecsUITests */,
 				C47EF31C2034E19C00B17B34 /* Products */,
 				6C8086C3206C4A85002E0125 /* Frameworks */,
+				C4A161892087DE4A00DB0615 /* Specs-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +149,9 @@
 				C47EF3252034E19C00B17B34 /* Assets.xcassets */,
 				C47EF32A2034E19C00B17B34 /* Info.plist */,
 				6C8086B7206C4997002E0125 /* AppDelegate.swift */,
+				C4A1618F2087EB5100DB0615 /* MoodTableViewController.swift */,
+				C4A1618D2087DE9800DB0615 /* sitesTableViewController.swift */,
+				C4A16191208802A900DB0615 /* TVShowTableViewController.swift */,
 				6C8086BA206C4998002E0125 /* FirstViewController.swift */,
 				6C8086B9206C4998002E0125 /* SecondViewController.swift */,
 				C4F70A332072EEFE00235262 /* ThirdViewController.swift */,
@@ -304,11 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A1618E2087DE9800DB0615 /* sitesTableViewController.swift in Sources */,
 				6C8086BD206C4998002E0125 /* SecondViewController.swift in Sources */,
 				6C8086BB206C4998002E0125 /* AppDelegate.swift in Sources */,
 				C4F70A342072EEFE00235262 /* ThirdViewController.swift in Sources */,
 				3F13CA73204B585300A70DE8 /* Model.swift in Sources */,
 				30488A8620879F4D00B1F8E6 /* DBObjects.swift in Sources */,
+				C4A16192208802A900DB0615 /* TVShowTableViewController.swift in Sources */,
+				C4A161902087EB5100DB0615 /* MoodTableViewController.swift in Sources */,
 				6C8086BE206C4998002E0125 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +491,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NWMSU.Specs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Specs-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -497,6 +512,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NWMSU.Specs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Specs-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
