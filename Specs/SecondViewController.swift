@@ -22,6 +22,10 @@ class SecondViewController: UIViewController {
         for i in 0..<myModel!.tvShows.count {
             showsLBL.text? += myModel!.tvShows[i]+"\n"
         }
+        moviesLBL.text=""
+        for i in 0..<myModel!.tvShows.count {
+            moviesLBL.text? += myModel!.movies[i]+"\n"
+        }
         let query = PFQuery(className:"Users")
         query.getObjectInBackground(withId: "gIFsjtaI2I") { (object, error) -> Void in
             if error == nil && object != nil {

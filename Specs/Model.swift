@@ -12,7 +12,8 @@ class Specs{
 
 var streamingSites: [String] = []
 var mood:String = ""
-    var tvShows: [String] = []
+var tvShows: [String] = []
+var movies:[String] = []
     func addSite(site:String){
         streamingSites+=[site]
     }
@@ -21,6 +22,9 @@ var mood:String = ""
     tvShows+=[show]
     }
     
+    func addMovies(movie:String){
+        movies+=[movie]
+    }
 }
 
 
