@@ -10,6 +10,9 @@ import UIKit
 
 class moviesTableViewController: UITableViewController {
     
+    /*
+     Listing all possible movies to be chosen in the customize scene
+    */
     let movies = ["12 Angry Men", "City of God", "Fight Club", "Forrest Gump", "Goodfellas", "Inception",
                   "It's a Wonderful Life", "Life is Beautiful", "One Flew Over the Cuckoo's Nest", "Pulp Fiction", "Schindler's List", "Se7en", "Seven Samurai", "Star Wars: Episode IV - A New Hope", "Star Wars: Episode V - The Empire Strikes Back", "The Dark Knight","The Godfather", "The Godfather: Part II", "The Good, the Bad, and the Ugly", "The Lord of the Rings: The Fellowship of the Ring", "The Lord of the Rings: The Return of the Key", "The Lord of the Rings: The Two Towers", "The Matrix", "The Shawshank Redemption", "The Silence of the Lambs"]
     
@@ -36,8 +39,8 @@ class moviesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 23
+        // Allocates the correct number of rows to hold all of the movie selections
+        return movies.count
     }
     
     
@@ -56,6 +59,9 @@ class moviesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        /*
+        Adding movies to movies array in Model class based upon user selections
+        */
         let myModel = AppDelegate.myModel
         if indexPath.row == 0 {
             myModel!.addMovies(movie: "12 Angry Men")
@@ -136,43 +142,6 @@ class moviesTableViewController: UITableViewController {
         
         
     }
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
 

@@ -13,6 +13,8 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //
         let myModel = AppDelegate.myModel
         streamingLBL.text=""
         for i in 0..<myModel!.streamingSites.count {
@@ -26,6 +28,8 @@ class SecondViewController: UIViewController {
         for i in 0..<myModel!.tvShows.count {
             moviesLBL.text? += myModel!.movies[i]+"\n"
         }
+        
+        //parsing through our Back4App database's Users class to find our user's favorite movie
         let query = PFQuery(className:"Users")
         query.getObjectInBackground(withId: "gIFsjtaI2I") { (object, error) -> Void in
             if error == nil && object != nil {
