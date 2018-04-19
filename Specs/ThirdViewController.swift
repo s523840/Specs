@@ -10,7 +10,7 @@ import UIKit
 import Parse
 
 class ThirdViewController: UIViewController {
-
+    //Initializing Buttons
     @IBOutlet weak var movieSuggestionLBL: UILabel!
     @IBOutlet weak var movieSuggestion2LBL: UILabel!
     
@@ -88,28 +88,6 @@ class ThirdViewController: UIViewController {
                 print(error as Any)
             }
         }
-//        let moviequery2 = PFQuery(className:"Movies")
-//        moviequery2.getObjectInBackground(withId: "KhhTi3UMB5") { (object, error) -> Void in
-//            if error == nil && object != nil {
-//                print("worked")
-//                print(object!["Title"] as! String)
-//            }
-//            else{
-//                print("oops")
-//                print(error as Any)
-//            }
-//        }
-//        let moviequery3 = PFQuery(className:"Movies")
-//        moviequery3.getObjectInBackground(withId: "jIxoGCI0pm") { (object, error) -> Void in
-//            if error == nil && object != nil {
-//                print("worked")
-//                print(object!["Title"] as! String)
-//            }
-//            else{
-//                print("oops")
-//                print(error as Any)
-//            }
-//        }
 
         //Displays the most popular shows in the suggestions view, selected based on descending rating out of 10
         let tvquery = PFQuery(className:"Shows")
