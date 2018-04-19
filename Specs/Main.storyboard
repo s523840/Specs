@@ -127,7 +127,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xui-8n-Rl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940" y="-626"/>
+            <point key="canvasLocation" x="1940" y="-626.53673163418296"/>
         </scene>
         <!--Show Table View Controller-->
         <scene sceneID="xKb-u6-qDF">
@@ -179,7 +179,7 @@
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hAJ-ro-Q9n">
                             <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Back"/>
+                            <state key="normal" title="Back- Add only 1 mood"/>
                             <connections>
                                 <segue destination="49e-Tb-3d3" kind="show" id="Igm-MP-FAZ"/>
                             </connections>
@@ -502,6 +502,6 @@
         <image name="spanner" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="i6V-lb-Kuu"/>
+        <segue reference="Igm-MP-FAZ"/>
     </inferredMetricsTieBreakers>
 </document>
