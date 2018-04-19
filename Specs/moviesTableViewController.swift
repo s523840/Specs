@@ -10,9 +10,7 @@ import UIKit
 
 class moviesTableViewController: UITableViewController {
     
-    /*
-     Listing all possible movies to be chosen in the customize scene
-    */
+    //Listing all possible movies to be chosen in the customize scene
     let movies = ["12 Angry Men", "City of God", "Fight Club", "Forrest Gump", "Goodfellas", "Inception",
                   "It's a Wonderful Life", "Life is Beautiful", "One Flew Over the Cuckoo's Nest", "Pulp Fiction", "Schindler's List", "Se7en", "Seven Samurai", "Star Wars: Episode IV - A New Hope", "Star Wars: Episode V - The Empire Strikes Back", "The Dark Knight","The Godfather", "The Godfather: Part II", "The Good, the Bad, and the Ugly", "The Lord of the Rings: The Fellowship of the Ring", "The Lord of the Rings: The Return of the Key", "The Lord of the Rings: The Two Towers", "The Matrix", "The Shawshank Redemption", "The Silence of the Lambs"]
     

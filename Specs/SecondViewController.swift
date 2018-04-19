@@ -14,7 +14,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //
+        //Loads user selections from the table view into the view controller
         let myModel = AppDelegate.myModel
         streamingLBL.text=""
         for i in 0..<myModel!.streamingSites.count {
@@ -81,8 +81,8 @@ class SecondViewController: UIViewController {
 
         }
     
+    // Declaring IBOutlets for the labels to show info based upon user selections
     @IBOutlet weak var showsLBL: UILabel!
-    
     @IBOutlet weak var moviesLBL: UILabel!
     @IBOutlet weak var streamingLBL: UILabel!
     @IBOutlet weak var favLBL: UILabel!

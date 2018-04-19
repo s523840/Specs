@@ -24,8 +24,9 @@ class ThirdViewController: UIViewController {
         super.viewDidLoad()
         let myModel = AppDelegate.myModel
         
+        // Displays suggested movies and shows based upon user's mood (only sad works for now)
         if myModel!.mood == "Sad"{
-            //movies
+            //Gets movies from database to display in mood suggestions
             let query1 = PFQuery(className:"Movies")
             query1.getObjectInBackground(withId: "y0iRxSYFRe") { (object, error) -> Void in
                 if error == nil && object != nil {
@@ -48,7 +49,8 @@ class ThirdViewController: UIViewController {
                     print(error as Any)
                 }
             }
-            //Tv shows
+            
+            //Gets tv shows from database to display in mood suggestions
             let query3 = PFQuery(className:"Shows")
             query3.getObjectInBackground(withId: "LrgxGWv2Ip") { (object, error) -> Void in
                 if error == nil && object != nil {
@@ -74,7 +76,7 @@ class ThirdViewController: UIViewController {
             }
         }
         
-        //START OF MOVIE CRAP
+        //Displays the most popular movies in the suggestions view, selected based on descending rating out of 10
         let moviequery = PFQuery(className:"Movies")
         moviequery.getObjectInBackground(withId: "y0iRxSYFRe") { (object, error) -> Void in
             if error == nil && object != nil {
@@ -108,8 +110,8 @@ class ThirdViewController: UIViewController {
 //                print(error as Any)
 //            }
 //        }
-        //END OF MOVIE CRAP
-        //START OF TV CRAP
+
+        //Displays the most popular shows in the suggestions view, selected based on descending rating out of 10
         let tvquery = PFQuery(className:"Shows")
         tvquery.getObjectInBackground(withId: "Nu2jIoicQM") { (object, error) -> Void in
             if error == nil && object != nil {
@@ -144,7 +146,7 @@ class ThirdViewController: UIViewController {
                 print(error as Any)
             }
         }
-        //END OF TV CRAP
+
     }
     
     func displayOKAlert(title: String, message: String) {
