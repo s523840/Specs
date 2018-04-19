@@ -87,7 +87,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Customize" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Customize" image="spanner" selectedImage="spanner" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -333,7 +333,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="R0y-c6-uRV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Suggestions" id="1EE-RS-D68"/>
+                    <tabBarItem key="tabBarItem" title="Suggestions" image="film" selectedImage="film" id="1EE-RS-D68"/>
                     <connections>
                         <outlet property="movieSuggestion2LBL" destination="iOp-su-QjN" id="hg4-JF-Ohg"/>
                         <outlet property="movieSuggestionLBL" destination="jRn-AG-JSY" id="FFc-gN-0OH"/>
@@ -473,7 +473,7 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="second" selectedImage="first" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="icons8-customer-filled-50" selectedImage="icons8-customer-filled-50" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="favLBL" destination="lAC-G9-qd2" id="hV2-ne-f0K"/>
                         <outlet property="moviesLBL" destination="Occ-2N-bXi" id="vtA-ct-MfL"/>
@@ -506,10 +506,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="film" width="30" height="30"/>
+        <image name="icons8-customer-filled-50" width="36" height="36"/>
         <image name="logo" width="1050" height="714"/>
         <image name="profile" width="1050" height="1050"/>
-        <image name="second" width="30" height="30"/>
+        <image name="spanner" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="i6V-lb-Kuu"/>
