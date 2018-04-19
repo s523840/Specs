@@ -40,32 +40,32 @@ class moodTableViewController: UITableViewController {
     
     
 //    // Override to support conditional editing of the table view.
-//    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-//        // Return false if you do not want the specified item to be editable.
-//        return true
-//    }
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let myModel = AppDelegate.myModel
-//        if indexPath.row == 0 {
-//            myModel!.mood = "Funny"
-//        }
-//        else if indexPath.row == 1 {
-//            myModel!.mood = "Romantic"
-//        }
-//        else if indexPath.row == 2 {
-//            myModel!.mood = "Sad"
-//        }
-//        else if indexPath.row == 3{
-//            myModel!.mood = "Fearless"
-//        }
-//        else if indexPath.row == 4{
-//            myModel!.mood = "Exhilarated"
-//        }
-//        else if indexPath.row == 5{
-//            myModel!.mood = "Animated"
-//        }
-//    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let myModel = AppDelegate.myModel
+        if indexPath.row == 0 {
+            myModel!.mood = "Funny"
+        }
+        else if indexPath.row == 1 {
+            myModel!.mood = "Romantic"
+        }
+        else if indexPath.row == 2 {
+            myModel!.mood = "Sad"
+        }
+        else if indexPath.row == 3{
+            myModel!.mood = "Fearless"
+        }
+        else if indexPath.row == 4{
+            myModel!.mood = "Exhilarated"
+        }
+        else if indexPath.row == 5{
+            myModel!.mood = "Animated"
+        }
+    }
     
     /*
      // Override to support editing the table view.
