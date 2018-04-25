@@ -25,7 +25,7 @@ class SecondViewController: UIViewController {
             showsLBL.text? += myModel!.tvShows[i]+"\n"
         }
         moviesLBL.text=""
-        for i in 0..<myModel!.tvShows.count {
+        for i in 0..<myModel!.movies.count {
             moviesLBL.text? += myModel!.movies[i]+"\n"
         }
         
